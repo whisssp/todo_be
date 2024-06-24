@@ -46,6 +46,7 @@ public class SecurityConfiguration {
                         // public - auth
                         .requestMatchers(HttpMethod.POST, "/api/v0/register").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/v0/authenticate").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/swagger-ui/**").permitAll()
                         // public - task
                         .requestMatchers(HttpMethod.GET, "/api/v0/public/todos").permitAll()
                         // authenticate require - task

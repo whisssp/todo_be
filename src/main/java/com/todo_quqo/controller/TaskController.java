@@ -1,6 +1,5 @@
 package com.todo_quqo.controller;
 
-import com.todo_quqo.entity.Task;
 import com.todo_quqo.payload.request.TaskRequest;
 import com.todo_quqo.payload.response.PaginationResponse;
 import com.todo_quqo.payload.response.TaskResponse;
