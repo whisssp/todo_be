@@ -22,7 +22,7 @@ public class TaskController {
         this.taskService = taskService;
     }
 
-    @PostMapping("/todo")
+    @PostMapping("/todos")
     public ResponseEntity<?> createTask(@Valid @RequestBody TaskRequest payload) {
         log.debug("REST to create a new Task");
         taskService.save(payload);
@@ -35,19 +35,19 @@ public class TaskController {
         return ResponseEntity.ok(taskService.getTasks(pageable));
     }
 
-    @GetMapping("/todo/{id}")
+    @GetMapping("/todos/{id}")
     public ResponseEntity<TaskResponse> getTaskById(@PathVariable("id") String id) {
         log.debug("REST to get Task by ID: {}", id);
         return ResponseEntity.ok(taskService.getTaskById(id));
     }
 
-    @PutMapping("/todo/{id}")
+    @PutMapping("/todos/{id}")
     public ResponseEntity<TaskResponse> updateTaskById(@PathVariable("id") String id, @RequestBody TaskRequest payload) {
         log.debug("REST to update Task ID: {}", id);
         return ResponseEntity.ok(taskService.updateTaskById(id, payload));
     }
 
-    @DeleteMapping("/todo/{id}")
+    @DeleteMapping("/todos/{id}")
     public ResponseEntity<Void> deleteTaskById(@PathVariable("id") String id) {
         log.debug("REST to delete Task ID: {}", id);
         taskService.delete(id);

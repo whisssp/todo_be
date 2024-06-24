@@ -16,7 +16,7 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ## Base URL
 
-`http://localhost:8080/api/v1`
+`http://localhost:8080/api/v0`
 
 ## Rule
 - API contains keyword `public` can call without authorization
@@ -25,7 +25,7 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 1. Register user
 
-**URL:** `http://localhost:8080/api/v1/register`
+**URL:** `http://localhost:8080/api/v0/register`
 
 **Method:** `POST`
 
@@ -53,7 +53,7 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 2. Authenticate
 
-**URL:** `http://localhost:8080/api/v1/authenticate`
+**URL:** `http://localhost:8080/api/v0/authenticate`
 
 **Method:** `POST`
 
@@ -80,7 +80,7 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 1. Create a new task
 
-**URL:** `http://localhost:8080/api/v1/tasks`
+**URL:** `http://localhost:8080/api/v0/tasks`
 
 **Method:** `POST`
 
@@ -103,7 +103,7 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 2. Update a task by id
 
-**URL:** `http://localhost:8080/api/v1/todo/{id}`
+**URL:** `http://localhost:8080/api/v0/todo/{id}`
 
 **Method:** `PUT`
 
@@ -140,7 +140,7 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 3. Delete task by ID
 
-**URL:** `http://localhost:8080/api/v1/todo/{id}`
+**URL:** `http://localhost:8080/api/v0/todo/{id}`
 
 **Method:** `DELETE`
 
@@ -156,9 +156,13 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 4. Get task by task id
 
-**URL:** `http://localhost:8080/api/v1/todo/{id}`
+**URL:** `http://localhost:8080/api/v0/todo/{id}`
 
 **Method:** `GET`
+
+**Headers:**
+
+- `Authorization: Bearer <token>`
 
 **Path Parameters:**
 
@@ -177,9 +181,9 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 4. Get all tasks
 
-**URL:** `http://localhost:8080/api/v1/todos`
+**URL:** `http://localhost:8080/api/v0/todos`
 
-**PUBLIC URL:** `http://localhost:8080/api/v1/public/todos`
+**PUBLIC URL:** `http://localhost:8080/api/v0/public/todos`
 
 **Method:** `GET`
 
