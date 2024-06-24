@@ -80,7 +80,7 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 1. Create a new task
 
-**URL:** `http://localhost:8080/api/v0/tasks`
+**URL:** `http://localhost:8080/api/v0/todos`
 
 **Method:** `POST`
 
@@ -103,7 +103,7 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 2. Update a task by id
 
-**URL:** `http://localhost:8080/api/v0/todo/{id}`
+**URL:** `http://localhost:8080/api/v0/todos/{id}`
 
 **Method:** `PUT`
 
@@ -140,7 +140,7 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 3. Delete task by ID
 
-**URL:** `http://localhost:8080/api/v0/todo/{id}`
+**URL:** `http://localhost:8080/api/v0/todos/{id}`
 
 **Method:** `DELETE`
 
@@ -156,7 +156,7 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 4. Get task by task id
 
-**URL:** `http://localhost:8080/api/v0/todo/{id}`
+**URL:** `http://localhost:8080/api/v0/todos/{id}`
 
 **Method:** `GET`
 

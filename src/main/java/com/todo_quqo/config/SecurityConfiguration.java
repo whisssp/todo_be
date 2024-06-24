@@ -49,10 +49,10 @@ public class SecurityConfiguration {
                         // public - task
                         .requestMatchers(HttpMethod.GET, "/api/v0/public/todos").permitAll()
                         // authenticate require - task
-                        .requestMatchers(HttpMethod.POST, "/api/v0/todo").authenticated()
-                        .requestMatchers(HttpMethod.PUT, "/api/v0/todo/**").authenticated()
-                        .requestMatchers(HttpMethod.DELETE, "/api/v0/todo/**").authenticated()
-                        .requestMatchers(HttpMethod.GET, "/api/v0/todo/**").authenticated()
+                        .requestMatchers(HttpMethod.POST, "/api/v0/todos").authenticated()
+                        .requestMatchers(HttpMethod.PUT, "/api/v0/todos/**").authenticated()
+                        .requestMatchers(HttpMethod.DELETE, "/api/v0/todos/**").authenticated()
+                        .requestMatchers(HttpMethod.GET, "/api/v0/todos/**").authenticated()
                         .requestMatchers(HttpMethod.GET, "/api/v0/todos/**").authenticated()
 
                         .anyRequest().permitAll()
