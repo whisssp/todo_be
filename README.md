@@ -7,16 +7,32 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 - `Spring data JPA`
 - `Spring Security: JWT`
 - `Mapstruct`
+- `Swagger UI`
+
+## Deployment
+- `Railway`for both database and application
+
+## API docs
+- Local: `http://localhost:8088/api/v0/swagger-ui/index.html`
+- Deployment: `https://todobe-production-fb5d.up.railway.app/swagger-ui/index.html`
 
 # Run application
 
-1. Build project: `./mvnw clean install`
-2. Run application: `./mvnw spring-boot:run`
+1. Clone repository: `git clone https://github.com/whisssp/todo_be.git`
+2. Open project : `cd todo_be`
+3. Build project: 
+- MacOS: `./mvnw clean install`
+- Window: `mvnw clean install`
+4. Run application: 
+- MacOS: `./mvnw spring-boot:run`
+- Window: `mvnw spring-boot:run`
 
 
 ## Base URL
 
-`http://localhost:8080/api/v0`
+- Local: `http://localhost:8088/api/v0`
+- Deployment: `https://todobe-production-fb5d.up.railway.app`
+
 
 ## Rule
 - API contains keyword `public` can call without authorization
@@ -25,7 +41,9 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 1. Register user
 
-**URL:** `http://localhost:8080/api/v0/register`
+**URL:** `http://localhost:8088//api/v0/register`
+
+**DEPLOY_URL:**  `https://todobe-production-fb5d.up.railway.app/register`
 
 **Method:** `POST`
 
@@ -34,7 +52,7 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 ```json
 {
   "name": "test",
-  "email": "nghia148052@gmail.com",
+  "email": "nghia1480533@gmail.com",
   "password": "123123",
   "phone": "123123"
 }
@@ -53,7 +71,9 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 2. Authenticate
 
-**URL:** `http://localhost:8080/api/v0/authenticate`
+**URL:** `http://localhost:8088/api/v0/authenticate`
+
+**DEPLOY_URL:**  `https://todobe-production-fb5d.up.railway.app/authenticate`
 
 **Method:** `POST`
 
@@ -80,7 +100,9 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 1. Create a new task
 
-**URL:** `http://localhost:8080/api/v0/todos`
+**URL:** `http://localhost:8088/api/v0/todos`
+
+**DEPLOY_URL:**  `https://todobe-production-fb5d.up.railway.app/todos`
 
 **Method:** `POST`
 
@@ -103,7 +125,9 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 2. Update a task by id
 
-**URL:** `http://localhost:8080/api/v0/todos/{id}`
+**URL:** `http://localhost:8088/api/v0/todos/{id}`
+
+**DEPLOY_URL:**  `https://todobe-production-fb5d.up.railway.app/todos/{id}`
 
 **Method:** `PUT`
 
@@ -140,7 +164,9 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 3. Delete task by ID
 
-**URL:** `http://localhost:8080/api/v0/todos/{id}`
+**URL:** `http://localhost:8088/api/v0/todos/{id}`
+
+**DEPLOY_URL:**  `https://todobe-production-fb5d.up.railway.app/todos/{id}`
 
 **Method:** `DELETE`
 
@@ -157,6 +183,8 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 ### 4. Get task by task id
 
 **URL:** `http://localhost:8080/api/v0/todos/{id}`
+
+**DEPLOY_URL:**  `https://todobe-production-fb5d.up.railway.app/todos{id}`
 
 **Method:** `GET`
 
@@ -183,7 +211,11 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 **URL:** `http://localhost:8080/api/v0/todos`
 
-**PUBLIC URL:** `http://localhost:8080/api/v0/public/todos`
+**PUBLIC_URL:** `http://localhost:8080/api/v0/public/todos`
+
+**DEPLOY_URL:**  
+- `https://todobe-production-fb5d.up.railway.app/todos`
+- `https://todobe-production-fb5d.up.railway.app/public/todos`
 
 **Method:** `GET`
 
