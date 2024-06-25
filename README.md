@@ -41,7 +41,7 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 1. Register user
 
-**URL:** `http://localhost:8088//api/v0/register`
+**URL:** `http://localhost:8088/api/v0/register`
 
 **DEPLOY_URL:**  `https://todobe-production-fb5d.up.railway.app/register`
 
@@ -182,7 +182,7 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 4. Get task by task id
 
-**URL:** `http://localhost:8080/api/v0/todos/{id}`
+**URL:** `http://localhost:8088/api/v0/todos/{id}`
 
 **DEPLOY_URL:**  `https://todobe-production-fb5d.up.railway.app/todos{id}`
 
@@ -209,9 +209,9 @@ This application supply Restful APIs to create/update/delete/get task from Datab
 
 ### 4. Get all tasks
 
-**URL:** `http://localhost:8080/api/v0/todos`
+**URL:** `http://localhost:8088/api/v0/todos`
 
-**PUBLIC_URL:** `http://localhost:8080/api/v0/public/todos`
+**PUBLIC_URL:** `http://localhost:8088/api/v0/public/todos`
 
 **DEPLOY_URL:**  
 - `https://todobe-production-fb5d.up.railway.app/todos`

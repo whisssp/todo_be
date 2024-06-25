@@ -35,11 +35,4 @@ public class AuthController {
         log.debug("Rest to register user account");
         return ResponseEntity.ok(authService.register(userRegisterRequest));
     }
-
-    @PostMapping("/test")
-    public ResponseEntity<String> test() {
-        log.debug("Rest to login user account");
-
-        return ResponseEntity.ok("Login");
-    }
 }
